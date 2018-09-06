@@ -1,0 +1,70 @@
+@import "function";
+@import "bem.config";
+
+/* BEM
+ -------------------------- */
+
+@mixin b($block) {
+    $B: $block !global;
+    .#{$B} {
+        @content;
+    }
+}
+
+@mixin el-b($block) {
+    $B: 'el-' + $block !global;
+    .#{$B} {
+        @content;
+    }
+}
+
+@mixin e($element) {
+    $selector: &;
+    @if containSpecialClass($selector) {
+        @at-root {
+            #{$selector} {
+                #{'.' + $B + $element-separator + $element} {
+                    @content;
+                }
+            }
+        }
+    }
+    @else {
+        @at-root {
+            #{$selector + $element-separator + $element} {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin m($modifier) {
+    @at-root {
+        #{&}#{$modifier-separator + $modifier} {
+            @content;
+        }
+    }
+}
+
+@mixin when($state) {
+  @at-root {
+    &.#{$when-prefix + $state} {
+      @content;
+    }
+  }
+}
+
+/* Placeholder
+ -------------------------- */
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
