@@ -2,7 +2,7 @@ import App from './app.vue'
 import Vue from 'vue'
 
 Object.assign(App, {
-    mpType: 'page'
+    mpType: 'app'
 })
 const app = new Vue(App)
 
