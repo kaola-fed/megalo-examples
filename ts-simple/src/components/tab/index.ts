@@ -1,6 +1,7 @@
-import { Vue, Provide, Prop } from 'vue-property-decorator'
+import { Vue, Provide, Prop, Component } from 'vue-property-decorator'
 
 
+@Component
 class Tab extends Vue {
     @Prop() title: string;
 

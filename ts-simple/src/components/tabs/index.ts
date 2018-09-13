@@ -1,5 +1,6 @@
-import { Vue, Provide } from 'vue-property-decorator'
+import { Vue, Provide, Component } from 'vue-property-decorator'
 
+@Component
 class Tabs extends Vue {
     @Provide() tabsList: any = [];
     @Provide() tabWidth: string = '100%';
