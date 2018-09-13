@@ -11,5 +11,5 @@
 <script lang="ts" src="./index.ts"></script>
 
 <style lang="scss">
-@import "@/styles/mixins/index.scss";
+    @import "./index";
 </style>

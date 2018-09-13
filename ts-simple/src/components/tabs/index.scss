@@ -1,0 +1,37 @@
+@import "@/styles/mixins/index.scss";
+@include b(kl-tabs) {
+    background: #fff;
+    @include e(header) {
+        position: relative;
+    }
+    @include e(header-tab) {
+        border-bottom:1px solid #eee;
+        font-size: 14px;
+        box-sizing: border-box;
+        position: relative;
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        min-width: 104px;
+        padding: 0 15px;
+        color: #333;
+        text-align: center;
+        cursor: pointer;
+        @include m(line) {
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+            box-sizing: border-box;
+            height: 2px;
+            background-color: #1890ff;
+            transform-origin: 0 0;
+            transition: all 0.2s;
+        }
+    }
+
+    @include e(body) {
+        background: #eee;
+        padding: 8px;
+    }
+}

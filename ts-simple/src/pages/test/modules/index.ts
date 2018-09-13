@@ -1,5 +1,5 @@
-import Tabs from '@/components/tabs.vue'
-import Tab from '@/components/tab.vue'
+import Tabs from '@/components/tabs/index.vue'
+import Tab from '@/components/tab/index.vue'
 import { Vue, Component } from 'vue-property-decorator'
 
 @Component({
