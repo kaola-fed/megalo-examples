@@ -1,5 +1,20 @@
 import App from './app.vue'
 import Vue from 'vue'
+import { Component } from 'vue-property-decorator';
+
+declare module "megalo/types/vue" {
+    interface Vue {
+        $mp: any
+    }
+}
+
+Component.registerHooks([
+    'onShow',
+    'onHide',
+    'onShareAppMessage',
+    'onReachBottom',
+    'onPullDownRefresh'
+])
 
 Object.assign(App, {
     mpType: 'app'

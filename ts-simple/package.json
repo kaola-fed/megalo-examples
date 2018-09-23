@@ -10,7 +10,7 @@
   "author": "zianecui@gmail.com",
   "license": "ISC",
   "devDependencies": {
-    "@megalo/target": "0.0.3-0",
+    "@megalo/target": "0.0.3-1",
     "@megalo/template-compiler": "0.0.3-0",
     "@types/node": "^10.9.4",
     "@types/weixin-app": "^2.2.4",
