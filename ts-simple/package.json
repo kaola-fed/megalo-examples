@@ -60,7 +60,7 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
-    "megalo": "0.0.3-0",
+    "megalo": "0.0.3-2",
     "vue-class-component": "^6.2.0",
     "vue-property-decorator": "^7.0.0"
   },
