@@ -8,7 +8,6 @@ const compiler = require('@megalo/template-compiler')
 // plugins
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' )
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 function resolve (dir) {
     return path.join(__dirname, '..', dir)
@@ -89,12 +88,7 @@ module.exports = {
         new VueLoaderPlugin(),
         new MiniCssExtractPlugin({
             filename: 'static/css/[name].wxss',
-        }),
-        new CopyWebpackPlugin([{
-            from: path.resolve(__dirname, '../src/htmlparse'),
-            to: path.resolve(__dirname, '../dist/htmlparse'),
-            ignore: ['.*']
-        }]),
+        })
     ],
     mode: 'none'
 }
