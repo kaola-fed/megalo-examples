@@ -10,8 +10,8 @@
   "author": "zianecui@gmail.com",
   "license": "ISC",
   "devDependencies": {
-    "@megalo/target": "^0.1.1",
-    "@megalo/template-compiler": "^0.1.2",
+    "@megalo/target": "^0.3.0",
+    "@megalo/template-compiler": "0.3.2",
     "@types/node": "^10.9.4",
     "@types/weixin-app": "^2.2.4",
     "autoprefixer": "^9.1.4",
@@ -59,7 +59,7 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
-    "megalo": "^0.1.2",
+    "megalo": "^0.3.2",
     "vue-class-component": "^6.2.0",
     "vue-property-decorator": "^7.0.0"
   },

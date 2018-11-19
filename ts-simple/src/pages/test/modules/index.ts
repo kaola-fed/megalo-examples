@@ -13,6 +13,9 @@ class App extends Vue {
     created() {
         console.log('created', this);
     }
+    onShow() {
+        console.log('onShow')
+    }
 }
 
 export default App
